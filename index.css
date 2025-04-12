@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    align-items: center;
+    background-image: url(https://img.freepik.com/premium-photo/colorful-background-with-colors-rainbow_1023064-93320.jpg?w=740);
+    background-repeat: no-repeat;
+    background-size:cover;
+    object-fit: cover;
+  
+
+    
+
+}
+.container{
+    position: relative;
+    background-image: url("./image.png");
+    background-size:cover;
+    border-radius: 50%;
+    
+}
+.clock{
+    /* position: absolute; */
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color:rgba(255,255,255,0.25);
+    border: 2px solid rgba(255,255,255,0.25);
+    box-shadow: 0px 0px 70px white; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.clock:hover{
+    border-color:pink;
+    transform: scale(0.9);
+}
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg* var(--i)));
+    inset: 12px;
+    /* display: flex; */
+    text-align: center;
+    /* justify-content: center; */
+}
+.clock::before{
+    content: " ";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color:white;
+}
+.hand i{
+    position: absolute;
+    height: 30%;
+    width: 4px;
+    background-color:white;
+    border-radius: 70%;
+}
+
+.hand {
+    position: absolute;
+    width: 4px;
+    height: 30%;
+    background-color: var(--clr);
+    transform-origin:bottom;
+    top: 62px;
+}
+
+
+
